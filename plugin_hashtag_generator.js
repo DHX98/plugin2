@@ -9,6 +9,9 @@ Output: Using chairfai api to classify the tags for the input IMG
 
 // boxes
 
+function test222(){
+    alert("success!");
+}
 /* inToWeb is to put the plugin into the webpage*/
 function inToWeb(){
     let x = document.getElementsByClassName("inner");
