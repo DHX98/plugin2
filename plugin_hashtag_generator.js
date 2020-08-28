@@ -6,12 +6,10 @@ Output: Using chairfai api to classify the tags for the input IMG
 
 */
 
-
+window.onload = function(){// to load all dom first.
+    alert("3rd");
 // boxes
 
-function test222(){
-    alert("success!");
-}
 /* inToWeb is to put the plugin into the webpage*/
 function inToWeb(){
     let x = document.getElementsByClassName("inner");
@@ -324,32 +322,12 @@ function thread2() {
     text_thread1.style.height = "20px";
     text_thread1.id = "thread_text2";
     box.appendChild(text_thread1);  
-    text_thread1.style.bottom =text_thread1.style.top = "30.5%";
+    //text_thread1.style.bottom =text_thread1.style.top = "30.5%";
 
 }
 
 //thread2();
-//animation show/hide
-function myMove() {
-    let elem = document.getElementById("table1");
-    let thread1 = document.getElementById("thread1");
-    let pos = 0;
-    let id = setInterval(frame, 0.5);
-    
-    function frame() {
-            if (pos == 800) {
-                clearInterval(id);
-            } else {
-                pos++;
-                elem.style.right = pos + "px";
-                thread1.style.right = pos + "px";
-            }
-        }
-        // thread1.style.display = "none";
-        //elem.style.display = "block";
-}
 
-//myMove();
 post_url = "https://raw.githubusercontent.com/DHX98/plugin/master/catDemo.jpg";
 
 window.onload = function(){
@@ -610,7 +588,6 @@ function imageIsLoaded() {
 
 
 
-
 /*
 function load_static_source(){
     add_ins_img(url_src);add_heart_img();add_comment_img();add_share_img();add_mark_img();add_avatar_img();add_dots_img();add_name('dhx', 'Corvallis, US');add_likes();add_tags(tags);
@@ -620,3 +597,12 @@ function ini(){
     inToWeb();
 }ini();
 */
+let insertPoint = document.createElement("div");
+insertPoint.id = "p1";
+
+document.getElementsByClassName("inner").appendChild(insertPoint);
+
+
+
+
+}
