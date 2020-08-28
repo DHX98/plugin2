@@ -14,7 +14,7 @@ window.onload = function(){// to load all dom first.
 function inToWeb(){
     let x = document.getElementsByClassName("inner");
     let a = document.createElement("div");
-    a.id = "kk";
+    a.id = "insertPoint";
     x[0].appendChild(a);
 }
 inToWeb();
@@ -30,7 +30,7 @@ function mainBody(){
     box.style.height = "100%";
     box.style.boxSizing = "border-box";
     box.style.paddingLeft = "50px";
-    document.body.appendChild(box);
+    document.getElementById("insertPoint").appendChild(box);
 
 }mainBody();
 /*the mainbody of this plugin, the relative postion can be change by this box.*/ 
